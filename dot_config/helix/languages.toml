@@ -1,0 +1,16 @@
+[[language]]
+name = "toml"
+auto-format = true
+
+[[language]]
+name = "yaml"
+auto-format = true
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "bash"
+auto-format = true
+
+[[language]]
+name = "fish"
+auto-format = true

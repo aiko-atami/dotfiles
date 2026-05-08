@@ -1,0 +1,34 @@
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+
+path_prepend() {
+    case ":$PATH:" in
+        *":$1:"*) ;;
+        *) PATH="$1${PATH:+:$PATH}" ;;
+    esac
+}
+
+[ -d "$HOME/.local/share/mise/shims" ] && path_prepend "$HOME/.local/share/mise/shims"
+[ -d "$HOME/.local/bin" ] && path_prepend "$HOME/.local/bin"
+[ -d "$HOME/.cargo/bin" ] && path_prepend "$HOME/.cargo/bin"
+[ -d "$HOME/go/bin" ] && path_prepend "$HOME/go/bin"
+export PATH
+
+if command -v hx >/dev/null 2>&1; then
+    export EDITOR=hx
+elif command -v nvim >/dev/null 2>&1; then
+    export EDITOR=nvim
+else
+    export EDITOR=vim
+fi
+export VISUAL=$EDITOR
+
+if [ -f "$HOME/.profile.local" ]; then
+    . "$HOME/.profile.local"
+fi
+
+if [ -n "$BASH_VERSION" ] && [ -f "$HOME/.bashrc" ]; then
+    . "$HOME/.bashrc"
+fi

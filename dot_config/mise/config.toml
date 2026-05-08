@@ -1,0 +1,68 @@
+[settings]
+always_keep_download = false
+experimental = true
+
+[settings.npm]
+package_manager = "pnpm"
+
+[tools]
+go = "latest"
+golangci-lint = "latest"
+"go:golang.org/x/tools/gopls" = "latest"
+
+rust = "latest"
+# faster backend "cargo:".
+cargo-binstall = "latest"
+
+node = "latest"
+pnpm = "latest"
+bun = "latest"
+"npm:eslint" = "10"
+"npm:opencode-ai" = "latest"
+"npm:@kilocode/cli" = "latest"
+"npm:@openai/codex" = "latest"
+"npm:izteamslots" = "latest"
+"npm:skills" = "latest"
+"npm:get-shit-done-cc" = "latest"
+"npm:@typescript/native-preview" = "beta"
+python = "latest"
+
+ruff = "latest"
+"github:astral-sh/uv" = "latest"
+
+"github:rossmacarthur/sheldon" = "latest"
+cmake = "latest"
+ninja = "latest"
+"github:microsoft/vcpkg-tool" = "2026-03-04"
+lefthook = "latest"
+gh = "latest"
+vp = "latest"
+usage = "latest"
+watchexec = "latest"
+fzf = "latest"
+ripgrep = { version = "latest", os = ["linux", "macos"] }
+zoxide = "latest"
+claude = "latest"
+btop = "latest"
+pandoc = "latest"
+pi = "latest"
+"npm:@google/gemini-cli" = "latest"
+atuin = "latest"
+neovim = "latest"
+zellij = "latest"
+starship = "latest"
+helix = "latest"
+chezmoi = "latest"
+"github:dgrr/tgcli" = "latest"
+"github:zeroclaw-labs/zeroclaw" = "latest"
+"github:xsfunc/tg-chats-cli" = "latest"
+yazi = "latest"
+fd = "latest"
+dust = "latest"
+"github:ouch-org/ouch" = "latest"
+"github:aristocratos/btop" = "1.4.7"
+mkcert = "latest"
+glow = "latest"
+"npm:happy" = "latest"
+age = "latest"
+"npm:@bitwarden/cli" = "latest"

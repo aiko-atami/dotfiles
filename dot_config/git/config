@@ -1,0 +1,8 @@
+[init]
+	defaultBranch = main
+
+[core]
+	hooksPath = ~/.githooks
+
+[include]
+	path = ~/.config/git/config.local
