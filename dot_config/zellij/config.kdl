@@ -1,4 +1,1 @@
 theme "catppuccin-mocha"
-
-web_server_cert "/home/xs/.certs/localhost+3.pem"
-web_server_key "/home/xs/.certs/localhost+3-key.pem"
